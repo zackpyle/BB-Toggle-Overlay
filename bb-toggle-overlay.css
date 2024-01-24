@@ -1,0 +1,17 @@
+.fl-overlays-hidden .fl-module-overlay,
+.fl-overlays-hidden .fl-row-overlay {
+    display: none !important;
+}
+.fl-overlays-hidden .fl-col-highlight .fl-col-content{
+    outline:none !important;
+}
+.fl-overlays-hidden .fl-builder-content {
+    user-select: auto !important;
+}
+#toggle-bb-overlays{
+    min-width: 130px;
+    justify-content: center;
+}
+#toggle-bb-overlays.overlay-hidden{
+    border-color: var(--fl-builder-accent-color) !important;
+}
