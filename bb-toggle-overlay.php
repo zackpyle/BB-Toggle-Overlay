@@ -32,8 +32,8 @@ if(! class_exists ( 'bb_overlay_toggle'))
 
     function bb_overlay_toggle_scripts(){
         if(class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active()){
-          wp_enqueue_script( 'bb_overlay_toggle_scripts', plugin_dir_url( __FILE__ ) . 'js/hidden-class-toggle.js', array('jquery') );
-          wp_enqueue_style( 'bb_overlay_toggle_styles', plugin_dir_url( __FILE__ ) . 'css/hidden-class-toggle.css' );
+          wp_enqueue_script( 'bb_overlay_toggle_scripts', plugin_dir_url( __FILE__ ) . 'js/bb-toggle-overlay.js', array('jquery') );
+          wp_enqueue_style( 'bb_overlay_toggle_styles', plugin_dir_url( __FILE__ ) . 'css/bb-toggle-overlay.css' );
         }
       }
   }
