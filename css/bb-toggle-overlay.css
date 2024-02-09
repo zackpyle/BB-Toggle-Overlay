@@ -11,6 +11,7 @@
 #toggle-bb-overlays{
     min-width: 130px;
     justify-content: center;
+    margin-inline: 5px;
 }
 #toggle-bb-overlays.overlay-hidden{
     border-color: var(--fl-builder-accent-color) !important;
