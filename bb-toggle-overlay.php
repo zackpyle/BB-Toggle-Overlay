@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Beaver Builder Toggle Overlay
  * Description: Lightweight plugin that adds a Toggle button in the Beaver Builder toolbar so you can toggle the overlays inside the builder
- * Version: 1.0
+ * Version: 1.0.1
  * Author: Ginger Soul & PYLE/DIGITAL
  * License: GPL2
 
