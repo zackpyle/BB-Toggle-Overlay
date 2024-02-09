@@ -9,6 +9,7 @@
 
  */
 
+define('BB_OVERLAY_TOGGLE_VERSION', '1.0.1');
 
 if(! class_exists ( 'bb_overlay_toggle'))
 {
@@ -32,8 +33,8 @@ if(! class_exists ( 'bb_overlay_toggle'))
 
     function bb_overlay_toggle_scripts(){
         if(class_exists('FLBuilderModel') && FLBuilderModel::is_builder_active()){
-          wp_enqueue_script( 'bb_overlay_toggle_scripts', plugin_dir_url( __FILE__ ) . 'js/bb-toggle-overlay.js', array('jquery') );
-          wp_enqueue_style( 'bb_overlay_toggle_styles', plugin_dir_url( __FILE__ ) . 'css/bb-toggle-overlay.css' );
+          wp_enqueue_script('bb_overlay_toggle_scripts', plugin_dir_url(__FILE__) . 'js/bb-toggle-overlay.js', array('jquery'), BB_OVERLAY_TOGGLE_VERSION, true);
+          wp_enqueue_style('bb_overlay_toggle_styles', plugin_dir_url(__FILE__) . 'css/bb-toggle-overlay.css', array(), BB_OVERLAY_TOGGLE_VERSION);
         }
       }
   }
